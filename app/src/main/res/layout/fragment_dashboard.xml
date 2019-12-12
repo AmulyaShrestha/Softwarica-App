@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etFullN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        app:met_floatingLabel="highlight"
+        android:inputType="text"
+        ></com.rengwuxian.materialedittext.MaterialEditText>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        app:met_floatingLabel="highlight"
+        android:inputType="number"
+        ></com.rengwuxian.materialedittext.MaterialEditText>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rdogrp">
+
+        <RadioButton
+            style="@style/ButtonStyle"
+            android:text="Male"
+            android:id="@+id/rdoMale"></RadioButton>
+
+        <RadioButton
+            style="@style/ButtonStyle"
+            android:text="Female"
+            android:id="@+id/rdoFemale"></RadioButton>
+
+        <RadioButton
+            style="@style/ButtonStyle"
+            android:text="Others"
+            android:id="@+id/rdoOthers"></RadioButton>
+
+    </RadioGroup>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:met_floatingLabel="highlight"
+        android:inputType="text"
+        android:id="@+id/etAddress"></com.rengwuxian.materialedittext.MaterialEditText>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"></Button>
+
+</LinearLayout>
